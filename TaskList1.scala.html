@@ -1,0 +1,17 @@
+@(tasks: Seq[String])
+
+@main("Welcome to Play") {
+  <h1>I am from TaskList View!</h1>
+  <ul>
+    <li>Emp name</li>
+    <li>Emp id</li>
+    <li>Emp dept</li>
+  </ul>
+
+  <ul>
+    @for(x <- tasks) {
+      <li> @x </li>
+    }
+  </ul>
+
+}
